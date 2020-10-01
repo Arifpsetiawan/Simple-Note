@@ -37,6 +37,7 @@ bool full() {
 
 void input(string judul, int tanggal, int bulan, int tahun, string pesan) {
   if (empty() == 0) {
+    list.judul[list.tail] = judul+bulan;
     list.judul[list.tail] = judul;
     list.tanggal[list.tail] = tanggal;
     list.bulan[list.tail] = bulan;
